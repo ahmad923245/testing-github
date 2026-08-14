@@ -24,6 +24,7 @@ function App() {
           <Route path='/chat/:id' element={<ProtectedRoute><Chat /></ProtectedRoute>} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/login' element={<Login />} />
+          <Route path='*' element={<><h1>404 Not Found</h1></>} />
         </Routes>
       </BrowserRouter>
 

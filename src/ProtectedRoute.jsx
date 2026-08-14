@@ -7,7 +7,7 @@ const ProtectedRoute = ({ children }) => {
 
 
     if (loading) {
-        <h1>Loading....</h1>
+        <h1> App is Loading....</h1>
     }
     if (!user) {
         return <Navigate to={'/login'} replace />
